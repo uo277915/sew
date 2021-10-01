@@ -24,41 +24,42 @@
     <form name="Encuesta">
         <fieldset>
         <legend> Aqui puedes incluir tus datos personales: </legend>
-        <p>Nombre completo: <label><input type=text></label></p>
-        <p>Correo electronico: <label><input type=text></label></p>
+        <label for="name">Nombre completo:</label> <input id="name" type=text  name="f1" /> <br/>
+        <label for="mail">Correo electronico::</label> <input id="mail" type=text name="f1" /> <br/>
         </fieldset>
         
         <br/>
         
         <fieldset>
         <legend> ¿Sabias que Tim John Berners-Lee era el creador de la World Wide Web? </legend>
-        <label> <input type=radio> Si! </label><br/>
-        <label> <input type=radio> No </label><br/>
+        <input id="radio_si" type=radio name="f2" /> <label for='radio_si'>Si!</label> <br/>
+        <input id="radio_no" type=radio name="f2" /> <label for='radio_no'>No</label> <br/>
         </fieldset>
 
         <br/>
         
         <fieldset>
         <legend> Para mi, el trabajo de Tim John Berners-Lee, ha sido: </legend>
-        <label> <input type=radio> Nada importante </label><br/>
-        <label> <input type=radio> Un poco importante </label><br/>
-        <label> <input type=radio> Bastante importante </label><br/>
-        <label> <input type=radio> Muy importante </label><br/>
+        <input id="f3_0" type=radio name="f3" /> <label for="f3_0"> Nada importante </label><br/>
+        <input id="f3_1" type=radio name="f3" /> <label for="f3_1"> Un poco importante </label> <br/>
+        <input id="f3_2" type=radio name="f3" /> <label for="f3_2"> Bastante importante </label> <br/>
+        <input id="f3_3" type=radio name="f3" /> <label for="f3_3"> Muy importante </label><br/>
         </fieldset>
 
         <br/>
     
-         <fieldset>
-         <legend> checkbox: </legend>
-         <label> <input type=checkbox> a </label><br/>
-         <label> <input type=checkbox> b </label><br/>
-         <label> <input type=checkbox> c </label><br/>
-         <label> <input type=checkbox> d </label><br/>
-         </fieldset>
+        <fieldset>
+        <legend> checkbox: </legend>
+        <input id="f4_0" type=checkbox  name="f4" /> <label> a </label><br/>
+        <input id="f4_1" type=checkbox  name="f4" /> <label> b </label><br/>
+        <input id="f4_2" type=checkbox  name="f4" /> <label>  c </label><br/>
+        <input id="f4_3" type=checkbox  name="f4" /> <label> d </label><br/>
+        </fieldset>
 
-         <br/>
+        <br/>
 
-        <label> <input type=submit> </label>
+        <input type=submit>
+        
     </form>
 </body>
 </html>
