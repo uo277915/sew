@@ -20,10 +20,12 @@
     <h2>¡Tu opinión tambien cuenta!</h2>
 
     <nav>
-        <a href="index.html"            accesskey="p" tabindex="1"> Pagina principal            </a>
-        <a href="WWW.html"              accesskey="q" tabindex="2"> ¿Qué es WWW?                </a>
-        <a href="DatosCuriosos.html"    accesskey="d" tabindex="3"> Datos curiosos              </a>
-        <a href="Encuesta.html"         accesskey="t" tabindex="4"> ¡Tu opinión tambien cuenta! </a>
+        <ul>
+        <li>    <a href="index.html"            accesskey="p" tabindex="1"> Pagina principal            </a>    </li>
+        <li>    <a href="WWW.html"              accesskey="q" tabindex="2"> ¿Qué es WWW?                </a>    </li>
+        <li>    <a href="DatosCuriosos.html"    accesskey="d" tabindex="3"> Datos curiosos              </a>    </li>
+        <li>    <a href="Encuesta.html"         accesskey="t" tabindex="4"> ¡Tu opinión tambien cuenta! </a>    </li>
+        </ul>
     </nav>
 
     <!-- TEMPORAL -->
@@ -31,39 +33,43 @@
     
     <form name="Encuesta">
         <fieldset>
-        <legend> Aqui puedes incluir tus datos personales: </legend>
-        <label for="name">Nombre completo:</label> <br/>
-        <input id="name" type=text  name="f1" /> <br/>
-        <label for="mail">Correo electronico::</label> <br/>
-        <input id="mail" type=text name="f1" /> <br/>
+        <legend> Aqui puedes incluir tus datos personales:  </legend>
+        
+        <label for="name">Nombre completo:      </label>    <br/>
+        <input id="name" type=text  name="f1" />            <br/>
+        <label for="mail">Correo electronico:   </label>    <br/>
+        <input id="mail" type=text name="f1" />             <br/>
         </fieldset>
         
         <br/>
         
         <fieldset>
         <legend> ¿Sabias que Tim John Berners-Lee era el creador de la World Wide Web? </legend>
+
         <input id="radio_si" type=radio name="f2" /> <label for='radio_si'>Si!</label> <br/>
-        <input id="radio_no" type=radio name="f2" /> <label for='radio_no'>No</label> <br/>
+        <input id="radio_no" type=radio name="f2" /> <label for='radio_no'>No </label> <br/>
         </fieldset>
 
         <br/>
         
         <fieldset>
-        <legend> Para mi, el trabajo de Tim John Berners-Lee, ha sido: </legend>
-        <input id="f3_0" type=radio name="f3" /> <label for="f3_0"> Nada importante </label><br/>
-        <input id="f3_1" type=radio name="f3" /> <label for="f3_1"> Un poco importante </label> <br/>
+        <legend> Para mi, el trabajo de Tim John Berners-Lee, ha sido:                           </legend>
+
+        <input id="f3_0" type=radio name="f3" /> <label for="f3_0"> Nada importante     </label> <br/>
+        <input id="f3_1" type=radio name="f3" /> <label for="f3_1"> Un poco importante  </label> <br/>
         <input id="f3_2" type=radio name="f3" /> <label for="f3_2"> Bastante importante </label> <br/>
-        <input id="f3_3" type=radio name="f3" /> <label for="f3_3"> Muy importante </label><br/>
+        <input id="f3_3" type=radio name="f3" /> <label for="f3_3"> Muy importante      </label> <br/>
         </fieldset>
 
         <br/>
     
         <fieldset>
-        <legend> checkbox: </legend>
-        <input id="f4_0" type=checkbox  name="f4" /> <label for="f4_0"> a </label><br/>
-        <input id="f4_1" type=checkbox  name="f4" /> <label for="f4_1"> b </label><br/>
-        <input id="f4_2" type=checkbox  name="f4" /> <label for="f4_2">  c </label><br/>
-        <input id="f4_3" type=checkbox  name="f4" /> <label for="f4_3"> d </label><br/>
+        <legend> checkbox:                                                           </legend>
+
+        <input id="f4_0" type=checkbox  name="f4" /> <label for="f4_0"> a   </label> <br/>
+        <input id="f4_1" type=checkbox  name="f4" /> <label for="f4_1"> b   </label> <br/>
+        <input id="f4_2" type=checkbox  name="f4" /> <label for="f4_2">  c  </label> <br/>
+        <input id="f4_3" type=checkbox  name="f4" /> <label for="f4_3"> d   </label> <br/>
         </fieldset>
 
         <br/>

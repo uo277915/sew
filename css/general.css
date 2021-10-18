@@ -1,0 +1,272 @@
+
+/* Especificidad: (0, 0, 1) */
+body {
+  
+  /* Seleccionamos la fuente para todo el proyecto */
+  font-family: Tahoma, sans-serif;
+
+  /* Seleccionamos los colores base del documento */
+  color: #818181;
+  background-color: #242424;
+  }
+  
+/* Especificidad: (0, 0, 2) */
+  body > p {
+	  
+  /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+	color: #ffffff;
+  background-color: inherit;
+  }
+
+  h1 {
+     /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+    color: #f6ff74;
+    background-color: inherit;
+  }
+
+  h2 {
+    /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+    color: #ffc061;
+    background-color: inherit;
+  }
+
+/* INICIO NAV */
+
+  nav > ul {
+
+    /* Seleccionamos el estilo basico del sistema de navegación */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    /* Cambiamos el color de fondo y heredamos el color de texto del cuerpo */
+    background-color: #333;
+    color: inherit;
+  }
+  
+  nav > ul > li {
+    /* Hacemos que los elementos se coloquen a la izquierda de la página */
+    float: left;
+  }
+  
+  nav > ul > li > a {
+    /* Creamos un botón a partir del enlace */
+    display: block;
+    color: white;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav > ul > li > a:hover {
+    /* Hacemos que al poner el raton sobre el botón, este cambie de color de fondo, pero no de texto */
+    background-color: #111;
+    color: inherit;
+  }
+
+/* FIN NAV */
+
+/* INICIO MEDIA */
+
+img {
+
+  /* Código para que la imagen ocupe el 50% de la pantalla */
+  width: 50%;
+  height: auto;
+
+  /* Código para centrar la imagen en pantalla */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+video{
+  
+  /* Código para que el video ocupe el 75% de la pantalla */
+  max-width: 75%;
+  height: auto;
+
+  /* Código para centrar el video en pantalla */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+audio{
+
+  /* Código para que el audio ocupe el 50% de la pantalla */
+  width: 50%;
+
+  /* Código para centrar el reproductor de audio en pantalla */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* FIN MEDIA */
+
+a {
+  color: rgb(255, 229, 144);
+
+  /* El color de fondo se hereda del cuerpo */
+  background-color: inherit;
+
+}
+
+a:hover {
+  color: rgb(255, 131, 82);
+
+  /* El color de fondo se hereda del cuerpo */
+  background-color: inherit;
+}
+
+/* INICIO TABLA */
+
+table, td, th {
+  /* Ponemos el borde de todos los elementos a 1px blanco */
+  border: 1px solid white;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+
+  /* El color se hereda del padre, mientras que cambiamos el color de fondo */
+	color: #ffffff;
+  background-color: #3a3a3a;
+  
+  /* Ponemos la tabla a un 75% de la pantalla */
+  max-width: 75%;
+  width: 100%;
+  height: auto;
+
+  /* Centramos la tabla en pantalla */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table > caption {
+  /* Cambiamos el tamaño y margen de el titulo de la tabla */
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+tfoot {
+  /* Ponemos la fuente de la ultima fila en negrita, pues contiene los resultados */
+  font-weight: bold;
+}
+
+/* FIN TABLA */
+
+/* INICIO LISTA */
+
+ul, li {
+  /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+	color: #ffffff;
+  background-color: #242424;
+} 
+
+/* FIN LISTA */
+
+/* INICIO FORMULARIO */
+
+form {  
+  /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+  color: white;
+  background-color: inherit;
+}
+
+input[type=text] {
+  /* Cambiamos el cuadro de texto para que tenga un margen con el texto */
+  width: 100%;
+  padding: .5em .5em;
+  margin-bottom: 2em;
+  margin-top: .2em;
+
+  /* Cambiamos el borde por una linea inferior, eliminando los restantes */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #f6ff74;
+  
+  /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+  background-color: inherit;
+  color: white;
+}
+
+input[type=text]:hover {
+
+  /* Cambiamos el borde por una linea inferior */
+  border-bottom-color:#ffc061;
+}
+
+input[type=text]:focus {
+
+  /* Cambiamos el borde por una linea inferior */
+  border-bottom-color:#ffc061;
+}
+
+fieldset {
+  color: inherit;
+  background-color: #3a3a3a;
+  max-width:75%;
+  padding:16px;	
+  border-radius:8px;
+  border-color: #f6ff74;
+
+  /* Colocamos los campos de preguntas centradas en pantalla */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset > legend {
+  /* Marcamos un margen a la legenda */
+  margin-bottom:0px;
+  margin-left:16px;
+
+  /* Hacemos la legenda mas grande */
+  font-size: 1.2em;
+
+  /* Cambiaomos el color de la legenda, pero dejamos el color de fondo como estaba */
+  color: #ffc061;
+  background-color: initial;
+}
+
+input[type=radio] {
+
+  /* Cambiamos el borde por una linea inferior */
+  margin-bottom: 1em;
+}
+
+input[type=checkbox] {
+
+  /* Cambiamos el borde por una linea inferior */
+  margin-bottom: 1em;
+}
+
+input[type=submit] {
+  
+  font-size: 1.2em;
+  border-radius:5px;
+
+  padding: .5em .8em;
+  border: none;
+  background-color: #f6ff74;
+  color: black;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* FIN LISTA */
