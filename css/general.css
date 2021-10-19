@@ -293,8 +293,8 @@ body {
 
   /* Especificidad: (0, 0, 1) */
   textarea {
-    background-color: #3a3a3a;
     color: white;
+    background-color: #3a3a3a;
     font-size: 1em;
   }
 
