@@ -8,7 +8,11 @@ body {
   /* Seleccionamos los colores base del documento */
   color: #818181;
   background-color: #242424;
-  }
+
+  display: grid;
+  gap: 1em;
+
+}
   
 /* Especificidad: (0, 0, 2) */
   body > p {
@@ -19,7 +23,6 @@ body {
 
   margin-left: 2em;
   margin-right: 2em;
-
   }
 
   h1 {
@@ -68,6 +71,10 @@ video{
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 2em;
+
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 audio{
@@ -81,6 +88,10 @@ audio{
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 2em;
+
+
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /* FIN MEDIA */
@@ -105,6 +116,8 @@ a:hover {
 table, td, th {
   /* Ponemos el borde de todos los elementos a 1px blanco */
   border: 1px solid white;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 table {
@@ -155,6 +168,9 @@ form {
   /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
   color: white;
   background-color: inherit;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 input[type=text] {
@@ -241,36 +257,10 @@ input[type=submit] {
   margin-bottom: 1em;
 }
 
-/* FIN LISTA */
-
-footer {
-  color: #f6ff74;
-  background-color: #1f1f1f;
-
-  padding: .5em;
-  text-align: right;
-}
-
-footer > img {
-   /* Código para que la imagen ocupe el 50% de la pantalla */
-   width: 5%;
-   height: auto;
- 
-   /* Código para centrar la imagen en pantalla */
-   display: inline-block;
-
-   margin: .3em;
-
-}
-
-section {
+textarea {
+  background-color: #3a3a3a;
   color: white;
-  background-color: inherit;
-  margin: 2em;
-}
-
-section > p {
-  margin: 2em;
+  font-size: 1em;
 }
 
 
@@ -312,3 +302,85 @@ nav > ul > li > a:hover {
 }
 
 /* FIN NAV */
+
+
+/* FIN LISTA */
+
+footer {
+  color: #f6ff74;
+  background-color: #1f1f1f;
+
+  padding: .5em;
+  text-align: right;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+footer > img {
+   /* Código para que la imagen ocupe el 50% de la pantalla */
+   width: 5%;
+   height: auto;
+ 
+   /* Código para centrar la imagen en pantalla */
+   display: inline-block;
+
+   margin: .3em;
+
+}
+
+header {
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+
+  color: inherit;
+  background-color: #272727;
+}
+
+section {
+  color: white;
+  background-color: inherit;
+  margin: 2em;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+aside {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+aside > img {
+  display: block;
+  width: 50%;
+}
+
+main {
+  color: white;
+  background-color: inherit;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+
+}
+
+main > p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+main > ul {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
