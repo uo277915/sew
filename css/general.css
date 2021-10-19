@@ -294,7 +294,7 @@ body {
   /* Especificidad: (0, 0, 1) */
   textarea {
     background-color: #3a3a3a;
-    /* color: heredado de body */
+	color: white;
     font-size: 1em;
   }
 
