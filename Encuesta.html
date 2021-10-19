@@ -16,17 +16,22 @@
 
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
-    <h1>El padre de la web</h1>
-    <h2>¡Tu opinión tambien cuenta!</h2>
+    <header>
+    
+        <h1>El padre de la web</h1>
 
-    <nav>
-        <ul>
-        <li>    <a href="index.html"            accesskey="p" tabindex="1"> Pagina principal            </a>    </li>
-        <li>    <a href="WWW.html"              accesskey="q" tabindex="2"> ¿Qué es WWW?                </a>    </li>
-        <li>    <a href="DatosCuriosos.html"    accesskey="d" tabindex="3"> Datos curiosos              </a>    </li>
-        <li>    <a href="Encuesta.html"         accesskey="t" tabindex="4"> ¡Tu opinión tambien cuenta! </a>    </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+            <li>    <a href="index.html"            accesskey="p" tabindex="1"> Pagina principal            </a>    </li>
+            <li>    <a href="WWW.html"              accesskey="q" tabindex="2"> ¿Qué es WWW?                </a>    </li>
+            <li>    <a href="DatosCuriosos.html"    accesskey="d" tabindex="3"> Datos curiosos              </a>    </li>
+            <li>    <a href="Encuesta.html"         accesskey="t" tabindex="4"> ¡Tu opinión tambien cuenta! </a>    </li>
+            </ul>
+        </nav>
+
+        <h2> ¡Tu opinión tambien cuenta! </h2>
+
+    </header>
 
     <!-- TEMPORAL -->
     <p>Si lo deseas puedes rellenar esta corta encuesta para compartir tu opinion sobre Tim John Berners-Lee y su trabajo.</p>
@@ -46,14 +51,14 @@
         <fieldset>
         <legend> ¿Sabias que Tim John Berners-Lee era el creador de la World Wide Web? </legend>
 
-        <input id="radio_si" type=radio name="f2" /> <label for='radio_si'>Si!</label> <br/>
-        <input id="radio_no" type=radio name="f2" /> <label for='radio_no'>No </label> <br/>
+        <input id="radio_si_f2" type=radio name="f2" /> <label for='radio_si_f2'>Si!</label> <br/>
+        <input id="radio_no_f2" type=radio name="f2" /> <label for='radio_no_f2'>No </label> <br/>
         </fieldset>
 
         <br/>
         
         <fieldset>
-        <legend> Para mi, el trabajo de Tim John Berners-Lee, ha sido:                           </legend>
+        <legend> Para mi, el trabajo de Tim John Berners-Lee, ha sido:                  </legend>
 
         <input id="f3_0" type=radio name="f3" /> <label for="f3_0"> Nada importante     </label> <br/>
         <input id="f3_1" type=radio name="f3" /> <label for="f3_1"> Un poco importante  </label> <br/>
@@ -64,12 +69,21 @@
         <br/>
     
         <fieldset>
-        <legend> checkbox:                                                           </legend>
+        <legend> Cuales de las siguientes acciones has realizado en la World Wide Web: (Puedes elegir más de una)   </legend>
 
-        <input id="f4_0" type=checkbox  name="f4" /> <label for="f4_0"> a   </label> <br/>
-        <input id="f4_1" type=checkbox  name="f4" /> <label for="f4_1"> b   </label> <br/>
-        <input id="f4_2" type=checkbox  name="f4" /> <label for="f4_2">  c  </label> <br/>
-        <input id="f4_3" type=checkbox  name="f4" /> <label for="f4_3"> d   </label> <br/>
+        <input id="f4_0" type=checkbox  name="f4" /> <label for="f4_0"> Buscar información                          </label> <br/>
+        <input id="f4_1" type=checkbox  name="f4" /> <label for="f4_1"> Crear página(s) web                         </label> <br/>
+        <input id="f4_2" type=checkbox  name="f4" /> <label for="f4_2"> Ver videos como medio de entretenimiento    </label> <br/>
+        <input id="f4_3" type=checkbox  name="f4" /> <label for="f4_3"> Hacer videollamadas                         </label> <br/>
+        </fieldset>
+
+        <br/>
+        
+        <fieldset>
+        <legend> ¿Viviste la época anterior a la creacion de la WWW?            </legend>
+
+        <input id="radio_si_f5" type=radio name="f5" /> <label for='radio_si_f5'>Si   </label> <br/>
+        <input id="radio_no_f5" type=radio name="f5" /> <label for='radio_no_f5'>No   </label> <br/>
         </fieldset>
 
         <br/>
@@ -77,5 +91,13 @@
         <input type=submit value="Enviar encuesta">
 
     </form>
+
+    <footer>
+
+        <p> Página creada por Andrés Martínez, 2021. </p>
+        <img src="multimedia/images/HTML5.png" alt=" HTML5 Válido!" />
+        <img src="multimedia/images/CSS3.png"  alt="CSS Válido!"  />
+
+    </footer>
 </body>
 </html>

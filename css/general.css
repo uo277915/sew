@@ -16,6 +16,10 @@ body {
   /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
 	color: #ffffff;
   background-color: inherit;
+
+  margin-left: 2em;
+  margin-right: 2em;
+
   }
 
   h1 {
@@ -30,43 +34,11 @@ body {
     background-color: inherit;
   }
 
-/* INICIO NAV */
-
-  nav > ul {
-
-    /* Seleccionamos el estilo basico del sistema de navegación */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-    /* Cambiamos el color de fondo y heredamos el color de texto del cuerpo */
-    background-color: #333;
-    color: inherit;
+  h3 {
+    /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
+    color: #ff7361;
+    background-color: inherit;
   }
-  
-  nav > ul > li {
-    /* Hacemos que los elementos se coloquen a la izquierda de la página */
-    float: left;
-  }
-  
-  nav > ul > li > a {
-    /* Creamos un botón a partir del enlace */
-    display: block;
-    color: white;
-    background-color: #1f1f1f;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav > ul > li > a:hover {
-    /* Hacemos que al poner el raton sobre el botón, este cambie de color de fondo, pero no de texto */
-    background-color: #111;
-    color: inherit;
-  }
-
-/* FIN NAV */
 
 /* INICIO MEDIA */
 
@@ -172,6 +144,7 @@ ul, li {
   /* Seleccionamos un nuevo color para el parrafo y heredamos el color de fondo del cuerpo */
 	color: #ffffff;
   background-color: #242424;
+  margin-left: 1.5em;
 } 
 
 /* FIN LISTA */
@@ -265,8 +238,77 @@ input[type=submit] {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1em;
+}
+
+/* FIN LISTA */
+
+footer {
+  color: #f6ff74;
+  background-color: #1f1f1f;
+
+  padding: .5em;
+  text-align: right;
+}
+
+footer > img {
+   /* Código para que la imagen ocupe el 50% de la pantalla */
+   width: 5%;
+   height: auto;
+ 
+   /* Código para centrar la imagen en pantalla */
+   display: inline-block;
+
+   margin: .3em;
+
+}
+
+section {
+  color: white;
+  background-color: inherit;
+  margin: 2em;
+}
+
+section > p {
+  margin: 2em;
 }
 
 
+/* INICIO NAV */
 
-/* FIN LISTA */
+nav > ul {
+
+  /* Seleccionamos el estilo basico del sistema de navegación */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  /* Cambiamos el color de fondo y heredamos el color de texto del cuerpo */
+  background-color: #333;
+  color: inherit;
+}
+
+nav > ul > li {
+  /* Hacemos que los elementos se coloquen a la izquierda de la página */
+  float: left;
+  margin-left: 0;
+}
+
+nav > ul > li > a {
+  /* Creamos un botón a partir del enlace */
+  display: block;
+  color: white;
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  /* Hacemos que al poner el raton sobre el botón, este cambie de color de fondo, pero no de texto */
+  background-color: #111;
+  color: inherit;
+}
+
+/* FIN NAV */
