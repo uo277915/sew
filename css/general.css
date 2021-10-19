@@ -1,0 +1,457 @@
+/* CSS hecho por Andrés Martínez, UO277915. */
+
+/* Especificidad: (0, 0, 1) */
+body {
+  
+  /* Seleccionamos la fuente para todo el proyecto */
+  font-family: Tahoma, sans-serif;
+
+  /* Seleccionamos los colores base del documento */
+  color: #ffffff;
+  background-color: #242424;
+
+  /* Elegimos el tipo de layout como Grid */
+  display: grid;
+  gap: 1em;
+
+}
+  
+/* Especificidad: (0, 0, 2) */
+  body > p {
+	  
+  /* Colocamos un marge a ambos lados de los parrafos de body */
+  margin-left: 2em;
+  margin-right: 2em;
+  }
+
+/* INICIO ENCABEZADOS */
+
+  /* Especificidad: (0, 0, 1) */
+    h1 {
+      /* Seleccionamos un nuevo color para el encabezado y heredamos el color de fondo del cuerpo */
+      color: #f6ff74;
+      /* background-color: heredado de body */
+    }
+
+  /* Especificidad: (0, 0, 1) */
+    h2 {
+      /* Seleccionamos un nuevo color para el encabezado y heredamos el color de fondo del cuerpo */
+      color: #ffc061;
+      /* background-color: heredado de body */
+    }
+
+  /* Especificidad: (0, 0, 1) */
+    h3 {
+      /* Seleccionamos un nuevo color para el encabezado y heredamos el color de fondo del cuerpo */
+      color: #ff7361;
+      /* background-color: heredado de body */
+    }
+
+/* FIN ENCABEZADOS */
+
+/* INICIO MEDIA */
+
+  /* Especificidad: (0, 0, 1) */
+  img {
+
+    /* Código para que la imagen ocupe el 50% de la pantalla */
+    width: 50%;
+    height: auto;
+
+    /* Código para centrar la imagen en pantalla */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  video{
+    
+    /* Código para que el video ocupe el 75% de la pantalla */
+    max-width: 75%;
+    height: auto;
+
+    /* Código para centrar el video en pantalla */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  audio{
+
+    /* Código para que el audio ocupe el 50% de la pantalla */
+    width: 50%;
+
+    /* Código para centrar el reproductor de audio en pantalla */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+/* FIN MEDIA */
+
+/* INICIO ENLACES */
+
+  /* Especificidad: (0, 0, 1) */
+  a {
+    color: rgb(255, 229, 144);
+
+    /* background-color: heredado de body */
+
+  }
+
+  /* Especificidad: (0, 1, 1) */
+  a:hover {
+    color: rgb(255, 131, 82);
+
+    /* background-color: heredado de body */
+  }
+
+/* FIN ENLACES */
+
+/* INICIO TABLA */
+
+  /* Especificidad: (0, 0, 1) */
+  table, td, th {
+    /* Ponemos el borde de todos los elementos a 1px blanco */
+    border: 1px solid white;
+
+    /* Indicamos que en el layout la tabla debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  table {
+    border-collapse: collapse;
+    text-align: center;
+
+
+    /* color: heredado de body */  
+    background-color: #3a3a3a;
+    
+    /* Ponemos la tabla a un 75% de la pantalla */
+    max-width: 75%;
+    width: 100%;
+    height: auto;
+
+    /* Centramos la tabla en pantalla */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Especificidad: (0, 0, 2) */
+  table > caption {
+    /* Cambiamos el tamaño y margen de el titulo de la tabla */
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  tfoot {
+    /* Ponemos la fuente de la ultima fila en negrita, pues contiene los resultados */
+    font-weight: bold;
+  }
+
+/* FIN TABLA */
+
+/* INICIO LISTA */
+
+  /* Especificidad: (0, 0, 1) */
+  ul, li {
+    /* Ponemos un ligero margen para dar dinamismo al texto */  
+    margin-left: 1.5em;
+  } 
+
+/* FIN LISTA */
+
+/* INICIO FORMULARIO */
+
+  /* Especificidad: (0, 0, 1) */
+  form {  
+
+    
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* Especificidad: (0, 1, 1) */
+  input[type=text] {
+    /* Cambiamos el cuadro de texto para que tenga un margen con el texto */
+    width: 100%;
+    padding: .5em .5em;
+    margin-bottom: 2em;
+    margin-top: .2em;
+
+    /* Cambiamos el borde por una linea inferior, eliminando los restantes */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #f6ff74;
+
+    /* color: heredado de body */
+    background-color: #3a3a3a;
+
+  }
+
+  /* Especificidad: (0, 2, 1) */
+  input[type=text]:hover {
+
+    /* Cambiamos el borde por una linea inferior */
+    border-bottom-color:#ffc061;
+  }
+
+  /* Especificidad: (0, 2, 1) */
+  input[type=text]:focus {
+
+    /* Cambiamos el borde por una linea inferior */
+    border-bottom-color:#ffc061;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  fieldset {
+    
+    /* Cambiamos el fondo del set y dejamos el color del body */
+
+    /* color: heredado de body */
+    background-color: #3a3a3a;
+
+    /* Cambiamos el tamaño y otros aspectos para hacerlo mas estético */
+    max-width:75%;
+    padding:16px;	
+    border-radius:8px;
+    border-color: #f6ff74;
+
+    /* Colocamos los campos de preguntas centradas en pantalla */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Especificidad: (0, 0, 2) */
+  fieldset > legend {
+    /* Marcamos un margen a la legenda */
+    margin-bottom:0px;
+    margin-left:16px;
+
+    /* Hacemos la legenda mas grande */
+    font-size: 1.2em;
+
+    /* Cambiaomos el color de la legenda, pero dejamos el color de fondo como estaba */
+    color: #ffc061;
+    /* background-color: heredado de body */
+  }
+
+  /* Especificidad: (0, 1, 1) */
+  input[type=radio] {
+
+    /* Añadimos un ligero margen bajo el botón */
+    margin-bottom: 1em;
+  }
+
+  /* Especificidad: (0, 1, 1) */
+  input[type=checkbox] {
+
+    /* Añadimos un ligero margen bajo el botón */
+    margin-bottom: 1em;
+  }
+
+  /* Especificidad: (0, 1, 1) */
+  input[type=submit] {
+    
+    /* Cambiamos el tamaño de texto y borde para hacerlo mas estético */
+    font-size: 1.2em;
+    border-radius:5px;
+
+    /* Cambiamos algunos ajustes para hacer el boton mas llamativo */
+    padding: .5em .8em;
+    border: none;
+    background-color: #f6ff74;
+    color: black;
+
+    /* Colocamos el botón en el centro de la pantalla y le añadimos un ligero margen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  textarea {
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1em;
+  }
+
+/* FIN FORMULARIO */
+
+/* INICIO NAV */
+
+  /* Especificidad: (0, 0, 2) */
+  nav > ul {
+
+    /* Seleccionamos el estilo basico del sistema de navegación */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    /* Cambiamos el color de fondo y heredamos el color de texto del cuerpo */
+    background-color: #333;
+    /* color: heredado de body */
+  }
+
+  /* Especificidad: (0, 0, 3) */
+  nav > ul > li {
+    /* Hacemos que los elementos se coloquen a la izquierda de la página */
+    float: left;
+    margin-left: 0;
+  }
+
+  /* Especificidad: (0, 0, 4) */
+  nav > ul > li > a {
+    /* Creamos un botón a partir del enlace */
+    display: block;
+    /* color: heredado de body */
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Especificidad: (0, 1, 4) */
+  nav > ul > li > a:hover {
+    /* Hacemos que al poner el raton sobre el botón, este cambie de color de fondo, pero no de texto */
+    background-color: #111;
+    /* background-color: heredado de body */
+  }
+
+/* FIN NAV */
+
+/* INICIO FOOTER */
+
+  /* Especificidad: (0, 0, 1) */
+  footer {
+    /* Cambiamos el color y fondo del pie de pagina */
+    color: #f6ff74;
+    background-color: #1f1f1f;
+
+    /* Añadimos algo de borde interno y lo colocamos hacia la derecha */
+    padding: .5em;
+    text-align: right;
+
+    
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+  }
+
+  /* Especificidad: (0, 0, 2) */
+  footer > img {
+    /* Código para que la imagen ocupe el 50% de la pantalla */
+    width: 5%;
+    height: auto;
+  
+    /* Código para centrar la imagen en pantalla */
+    display: inline-block;
+
+    /* Añadimos un pequeño margen */
+    margin: .3em;
+
+  }
+
+/* FIN FOOTER */
+
+  /* Especificidad: (0, 0, 1) */
+  header {
+    
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+    
+    /* color: heredado de body */
+    background-color: #272727;
+  }
+
+  /* Especificidad: (0, 0, 1) */
+  section {
+    margin: 2em;
+    
+    /* Indicamos que en el layout debe ocupar solo el 66% derecho de la pantalla */
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  /* INICIO ASIDE */
+
+  /* Especificidad: (0, 0, 1) */
+  aside {
+
+      /* Indicamos que en el layout debe ocupar solo el 33% izquierdo de la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  /* Especificidad: (0, 0, 2) */
+  aside > img {
+      /* Cambiamos la configuracion de la imagenes adicionales */
+    display: block;
+    width: 50%;
+  }
+
+/* FIN ASIDE */
+
+/* INICIO MAIN */
+
+  /* Especificidad: (0, 0, 1) */
+  main {
+    
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* Volvemos a marcar el panel como grid para poder separar dentro las secciones de los datos adicionales */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+
+  }
+
+  /* Especificidad: (0, 0, 2) */
+  main > p {
+    
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* Especificidad: (0, 0, 2) */
+  main > ul {
+    
+    /* Indicamos que en el layout debe ocupar toda la pantalla */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+/* FIN MAIN */
+
+/* CSS hecho por Andrés Martínez, UO277915. */
